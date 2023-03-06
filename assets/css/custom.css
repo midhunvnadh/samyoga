@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+.font-tn {
+    font-family: 'Tilt Neon', cursive;
+}
+
+.font-bungee {
+    font-family: 'Bungee Outline', cursive;
+}
+
+.font-berkshire {
+    font-family: 'Berkshire Swash', cursive;
+}
