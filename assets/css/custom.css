@@ -13,3 +13,64 @@
 .font-berkshire {
     font-family: 'Berkshire Swash', cursive;
 }
+* {
+    margin: 0;
+    padding: 0;
+    font-family:ubuntu;
+  }
+  body {
+    background-color: #000000;
+  }
+  .accord {
+    width: 610px;
+    margin: auto;
+    margin-top: 100px;
+    height: 400px;
+    overflow: hidden;
+    border: white 3px solid;
+    background-color: white;
+    transition: all 0.8s ease;
+  }
+  .accord ul li {
+    width: 150px;
+    display: block;
+    float: left;
+    position: relative;
+    border-left: 2px solid white;
+    height: 400px;
+    transition: all 0.5s ease, opacity 0.2s ease;
+    opacity: 0.8;
+   }
+
+  .accord ul li img {
+    width: 300px;
+    height: inherit;
+  }
+  .title {
+    transition: all 0.5s ease-in;
+    position: absolute;
+    bottom: 0;
+    width: 300px;
+    display: block;
+    background-color: rgba(89, 89, 89, 0.4);
+  }
+  .title a {
+    font-size: 110%;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+  }
+  .accord:hover {
+    box-shadow: 6px 6px 10px 5px grey;
+    transform: scale(1.1, 1.1);
+  }
+  .accord ul:hover li {
+    width: 100px;
+  }
+  .accord ul li:hover {
+    width: 300px;
+    opacity: 1;
+  }
+  
