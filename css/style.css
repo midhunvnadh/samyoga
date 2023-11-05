@@ -366,7 +366,7 @@ a:focus {
 .slider_section .carousel-control-prev,
 .slider_section .carousel-control-next {
   position: absolute;
-  top: 45%;
+  top: 55%;
   left: initial;
   right: 25px;
   width: 55px;
