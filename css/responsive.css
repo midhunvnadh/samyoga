@@ -10,7 +10,20 @@
 
 }
 
-@media (max-width: 1120px) {}
+@media (max-width: 1120px) {
+    .img-box{
+    overflow-x: hidden;
+}
+.img-box{
+    width: 100%;
+    height: 600px;
+}
+.img-box video{
+    object-fit: cover;
+   width: 100%;
+   height: 100%;
+}
+}
 
 @media (max-width: 992px) {
     .hero_area {
