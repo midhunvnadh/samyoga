@@ -133,9 +133,22 @@
                       
                     </div>
                     <div class="btn-box">
-                      <a onclick="alert('registration not available')">
-                        Grab Your Tickets
-                      </a>
+                     <a onclick="showPopup()">Grab Your Tickets</a>
+                       <!-- Pop-up message -->
+                         <div id="popup" class="popup">
+                         <span class="close" onclick="closePopup()">&times;</span>
+                         <p>Registraion is not open yet...</p>
+                         </div>
+                           <script>
+                           // JavaScript functions to show and close the pop-up
+                            function showPopup() {
+                             document.getElementById('popup').style.display = 'block';
+                             }
+
+                             function closePopup() {
+                             document.getElementById('popup').style.display = 'none';
+                             }
+                           </script>
                     </div>
                   </div>
                 </div>
