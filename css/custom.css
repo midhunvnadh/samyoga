@@ -1,0 +1,66 @@
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #0e0d0d;
+    text-align: center;
+    padding: 50px;
+    color: #ffffff;
+    margin-top: 15%;
+}
+  .gradient {
+    --size: 250px;
+    --speed: 50s;
+    --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+    width: var(--size);
+    height: var(--size);
+    filter: blur(calc(var(--size) / 5));
+    background-image: linear-gradient(rgba(55, 235, 169, 0.85), #5b37eb);
+    animation: rotate var(--speed) var(--easing) alternate infinite;
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+  }
+  
+  @media (min-width: 720px) {
+    .gradient {
+      --size: 500px;
+    }
+  }
+  
+  .text1{
+    text-align: center;
+margin-bottom: 50%;
+margin-top: -50%;
+
+    
+  }
+  .black-button {
+    background-color: #6f6f6f;
+    color: #fff;
+    border: 2px solid #000;
+    border-radius: 10px; /* Adjust the border-radius for roundness */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Ensures the button behaves like a block element */
+}
+.remove{
+    text-decoration: none;
+    color: #ffffff;
+}
+/* Optional: Add hover effect */
+.black-button:hover {
+    background-color: #333; /* Change the color on hover if desired */
+    text-decoration: none;
+}
+  
+  /* This is just to transition when you change the viewport size. */
+  * {
+    transition: all 0.25s ease-out;
+  }
