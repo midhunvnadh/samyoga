@@ -31,6 +31,16 @@
 </head>
 
 <body class="sub_page">
+  <script>
+    // Change the URL without triggering a page reload
+    history.pushState({}, document.title, "/hidden-url");
+
+    // Listen for the back/forward button events
+    window.onpopstate = function(event) {
+        // Handle the back/forward navigation here
+        console.log('Popstate event:', event.state);
+    };
+</script>
 
   <div class="hero_area">
     <!-- header section strats -->
